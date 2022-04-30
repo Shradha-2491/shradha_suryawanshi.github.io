@@ -38,10 +38,6 @@
       .backg {
         background-color: rgb(129, 6, 211);
       }
-      .card:hover{
-        transform: scale(1.05);
-        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-      }
     </style>
     <title>Shradha Suryawanshi</title>
     <link rel = "icon" href = 
@@ -57,7 +53,7 @@
         >
         <button
           class="btn btn-outline-dark ml-auto"
-          onclick="location.href= 'contact_me.htm';"
+          onclick="location.href= 'contact_me.php';"
         >
           Contact Me
         </button>
@@ -71,7 +67,7 @@
         <div class="collapse navbar-collapse flex-grow-0" id="Nav">
           <div class="navbar-nav">
             <a
-              href="all_projects.htm"
+              href="all_projects.php"
               class="nav-link nav-item text-dark mx-3 my-auto"
             >
               Projects
@@ -80,105 +76,62 @@
         </div>
         <div class="collapse navbar-collapse flex-grow-0" id="Nav">
           <div class="navbar-nav">
-            <a href="recommendation.htm" class="nav-link nav-item text-dark mx-3 my-auto">
+            <a href="recommendation.php" class="nav-link nav-item text-dark mx-3 my-auto">
               Write Recommendation
             </a>
           </div>
         </div>
       </div>
     </nav>
-
+    
+    <!-- Contact Form -->
     <div class="container text-center" style="margin-top: 100px">
       <h1 class="font-weight-light">
-        <span class="text-info">All</span> My
-        <span class="text-info">Project</span>
+        <span class="text-info">Contact</span> Me
       </h1>
-      <div class="row my-5 pt-3">
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            <img
-              src="Logo/Computer1 (1).jpg"
-              alt="Image"
-              class="card-img-top"
+      <div class="container my-5" style="border: 1px solid black; padding: 30px; border-radius: 10px;">
+        <div>
+          <div class="form-group">
+            <label for="exampleInputUsername" style="font-size: large;">Your name</label>
+            <input
+              type="text"
+              class="form-control"
+              id=""
+              placeholder=" Enter Name"
             />
-            <div class="card-body">
-              <h4 class="card-title">Simple Food Ordering App Design</h4>
-              <p class="card-text">Simple Project give understanding of basic concept of Android App Development</p>
-              <a href="https://github.com/Shradha-2491/Simple_Food_Ordering_App_Design" class="stretched-link" target="_blank" rel="noreferrer noopener"></a>
-            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail" style="font-size: large;">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail"
+              placeholder=" Enter Email id"
+            />
+          </div>
+          <div class="form-group">
+            <label for="telephone" style="font-size: large;">Mobile No.</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="telephone"
+              placeholder=" Enter 10-digit mobile no."
+            />
           </div>
         </div>
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            <img
-              src="Logo/Computer1 (2).jpg"
-              alt="Image"
-              class="card-img-top"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Health App</h4>
-              <p class="card-text">This is my project about Health app.</p>
-              <a href="https://github.com/Shradha-2491/HealthApp" class="stretched-link"  target="_blank" rel="noreferrer noopener"></a>
-            </div>
+        <div>
+          <div class="form-group">
+            <label for="description" style="font-size: large;"> Message</label>
+            <textarea
+              class="form-control"
+              id="description"
+              placeholder="Enter Your Message"
+            ></textarea>
           </div>
-        </div>
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            <img
-              src="Logo/Computer1 (3).jpg"
-              alt="Image"
-              class="card-img-top"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Developing Responsive Layouts using Bootstrap</h4>
-              <p class="card-text">This is my project about responsive layout</p>
-              <a href="https://github.com/Shradha-2491/Developing_Responsive_Layouts_using_Bootstrap" class="stretched-link" target="_blank" rel="noreferrer noopener"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row my-5 pt-3">
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            <img
-              src="Logo/Computer1 (1).jpg"
-              alt="Image"
-              class="card-img-top"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Tic Tac Toe</h4>
-              <p class="card-text">'Tic Tac Toe' is an 2D Game App played between two player.</p>
-              <a href="https://github.com/Shradha-2491/TicTacToe" class="stretched-link" target="_blank" rel="noreferrer noopener"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            <img
-              src="Logo/Computer1 (2).jpg"
-              alt="Image"
-              class="card-img-top"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Calculator</h4>
-              <p class="card-text">This is my project on calculator</p>
-              <a href="https://github.com/Shradha-2491/Calculator" class="stretched-link" target="_blank" rel="noreferrer noopener"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 my-2">
-          <div class="card shadow h-100">
-            <img
-              src="Logo/Computer1 (3).jpg"
-              alt="Image"
-              class="card-img-top"
-            />
-            <div class="card-body">
-              <h4 class="card-title">My Travel Guide</h4>
-              <p class="card-text">My Android App development project My Travel Guide.</p>
-              <a href="https://github.com/Shradha-2491/My_Travel_Guide" class="stretched-link" target="_blank" rel="noreferrer noopener"></a>
-            </div>
+          <div>
+            <button type="button" class="btn btn-outline-dark ml-auto submit">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i> Send Message
+            </button>
           </div>
         </div>
       </div>
@@ -191,7 +144,7 @@
           <h2>Open to work</h2>
           <button
             class="btn btn-outline-light btn-md mt-2"
-            onclick="location.href= 'contact_me.htm';"
+            onclick="location.href= 'contact_me.php';"
           >
             Contact Me
           </button>
@@ -199,9 +152,9 @@
         <div class="row">
           <div class="col-12 col-md-4 py-3">
             <h5 class="text-warning">More Links</h5>
-            <a href="index.htm" class="text-light d-block">Home</a>
-            <a href="contact_me.htm" class="text-light d-block">Contact me</a>
-            <a href="recommendation.htm" class="text-light"
+            <a href="index.html" class="text-light d-block">Home</a>
+            <a href="contact_me.php" class="text-light d-block">Contact me</a>
+            <a href="recommendation.php" class="text-light"
               >Write a recommendation <i class="fab fa-gratipay"></i
             ></a>
           </div>
