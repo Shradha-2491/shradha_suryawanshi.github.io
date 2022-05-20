@@ -5,9 +5,9 @@ $email = $_POST['email'];
 $mobile = $_POST['mobile'];
 $message = $_POST['message'];
 
-$description =$message.\n."Contact No.:".$mobile;
+$description =$message."\nContact No.: ".$mobile;
 
-$mailHeader = "From:".$name."<".$email.">"\r\n;
+$mailHeader = "From:".$name."<".$email.">\r\n";
 
 $resever = "portfolio.shradha.2491@gmail.com";
 

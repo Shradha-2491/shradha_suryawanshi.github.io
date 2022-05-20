@@ -6,9 +6,9 @@ $workplace = $_POST['workplace'];
 $jobtitle = $_POST['jobtitle'];
 $message = $_POST['message'];
 
-$description =$message.\n."My Workplace:".$workplace.\n."My Role:".$jobtitle;
+$description =$message."\nMy Workplace:".$workplace."\nMy Role:".$jobtitle;
 
-$mailHeader = "From:".$name."<".$email.">"\r\n;
+$mailHeader = "From:".$name."<".$email.">\r\n";
 
 $resever = "portfolio.shradha.2491@gmail.com";
 
