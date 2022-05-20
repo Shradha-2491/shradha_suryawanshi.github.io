@@ -89,7 +89,7 @@
       <h1 class="font-weight-light">
         <span class="text-info">Contact</span> Me
       </h1>
-      <div class="container my-5" style="border: 1px solid black; padding: 30px; border-radius: 10px;">
+      <form class="container my-5" style="border: 1px solid black; padding: 30px; border-radius: 10px;"  action="contact.php" method = "POST">
         <div>
           <div class="form-group">
             <label for="exampleInputUsername" style="font-size: large;">Your name</label>
@@ -97,6 +97,7 @@
               type="text"
               class="form-control"
               id=""
+              name="name"
               placeholder=" Enter Name"
             />
           </div>
@@ -105,7 +106,8 @@
             <input
               type="email"
               class="form-control"
-              id="exampleInputEmail"
+              id="inputEmail"
+              name = "email"
               placeholder=" Enter Email id"
             />
           </div>
@@ -115,16 +117,16 @@
               type="tel"
               class="form-control"
               id="telephone"
+              name="mobile"
               placeholder=" Enter 10-digit mobile no."
             />
           </div>
-        </div>
-        <div>
           <div class="form-group">
             <label for="description" style="font-size: large;"> Message</label>
             <textarea
               class="form-control"
               id="description"
+              name = "message"
               placeholder="Enter Your Message"
             ></textarea>
           </div>
@@ -134,7 +136,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
 
     <!-- Footer Section -->
