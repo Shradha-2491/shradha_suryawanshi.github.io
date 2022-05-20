@@ -12,7 +12,7 @@ $mailHeader = "From:".$name."<".$email.">"\r\n;
 
 $resever = "portfolio.shradha.2491@gmail.com";
 
-mail($resever, "Given Feedback to you, mail send from you Portfolio", $description, $mailHeader)o or die("Error!");
+mail($resever, "Given Feedback to you, mail send from you Portfolio", $description, $mailHeader) or die("Error!");
 
 echo'
 <!DOCTYPE html>
