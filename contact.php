@@ -4,16 +4,17 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $mobile = $_POST['mobile'];
 $message = $_POST['message'];
+echo $message;
 
 $description =$message."\nContact No.: ".$mobile;
 
 $mailHeader = "From:".$name."<".$email.">\r\n";
 
-$resever = "portfolio.shradha.2491@gmail.com";
+$re = "portfolio.shradha.2491@gmail.com";
 
-mail($resever, "Want to Contact you, mail send from you Portfolio", $description, $mailHeader) or die("Error!");
+mail($re, "Want to Contact you, mail send from you Portfolio", $description, $mailHeader) or die("Error!");
 
-echo'
+echo '
 <!DOCTYPE html>
 <html lang="en">
   <head>

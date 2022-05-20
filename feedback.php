@@ -10,11 +10,11 @@ $description =$message."\nMy Workplace:".$workplace."\nMy Role:".$jobtitle;
 
 $mailHeader = "From:".$name."<".$email.">\r\n";
 
-$resever = "portfolio.shradha.2491@gmail.com";
+$re = "portfolio.shradha.2491@gmail.com";
 
-mail($resever, "Given Feedback to you, mail send from you Portfolio", $description, $mailHeader) or die("Error!");
+mail($re, "Given Feedback to you, mail send from you Portfolio", $description, $mailHeader) or die("Error!");
 
-echo'
+echo '
 <!DOCTYPE html>
 <html lang="en">
   <head>
