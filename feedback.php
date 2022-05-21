@@ -8,11 +8,23 @@ $message = $_POST['message'];
 
 $description =$message."\nMy Workplace:".$workplace."\nMy Role:".$jobtitle;
 
-$mailHeader = "From:".$name."<".$email.">\r\n";
+$mailheader = array("From: ".$email,
+    "Reply-To: portfolio.shradha.2491@gmail.com",
+    "X-Mailer: PHP/" . PHP_VERSION
+);
+$mailheader = implode("\r\n", $mailheader);
 
-$re = "portfolio.shradha.2491@gmail.com";
+$to = "portfolio.shradha.2491@gmail.com";
+$subject = "Given Feedback to you, mail send from you Portfolio";
 
-mail($re, "Given Feedback to you, mail send from you Portfolio", $description, $mailHeader) or die("Error!");
+$status = mail($to, $subject, $message, $mailheader);
+
+if($status)
+{
+    echo '<p>Your mail has been sent!</p>';
+} else {
+    echo '<p>Something went wrong. Please try again!</p>';
+}
 
 echo '
 <!DOCTYPE html>
@@ -68,15 +80,10 @@ echo '
         </h1>
         <div class="py-5 text-dark">
             <h2>Go to Home page</h2>
-            <button
-              class="btn btn-outline-dark btn-md mt-2"
-              onclick="location.href= "index.htm";"
-            >
-              Home Page
-            </button>
+            <a href="index.htm" class="text-dark d-block">Home page</a>
           </div>
       </div>
   </body>
 </html>
-'
+';
 ?>
